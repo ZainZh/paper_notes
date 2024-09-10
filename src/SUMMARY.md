@@ -1,3 +1,5 @@
-# Summary
+# Paper Notes
 
-- [Chapter 1](./chapter_1.md)
+- [Hyperspectral](./hyperspectral.md)
+  - [Robotics](./hyperspectral_robotics.md)
+
