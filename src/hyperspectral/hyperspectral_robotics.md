@@ -1,3 +1,1 @@
-# Hyperspectral + Robotics
-
-Classification of Household Materials via  Spectroscopy
+这个章节主要整理高光谱（Hyperspectral）和光谱学(spectroscopy)与机器人结合的相关工作
