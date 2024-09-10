@@ -1,5 +1,5 @@
 # Paper Notes
-
-- [Hyperspectral](./hyperspectral.md)
-  - [Robotics](./hyperspectral_robotics.md)
+- [Paper Notes](./paper_notes.md)
+    - [Hyperspectral](./hyperspectral/hyperspectral.md)
+      - [Robotics](./hyperspectral/hyperspectral_robotics.md)
 
