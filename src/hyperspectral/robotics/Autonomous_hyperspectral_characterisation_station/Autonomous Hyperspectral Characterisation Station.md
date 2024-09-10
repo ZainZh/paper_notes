@@ -24,6 +24,10 @@ automated data analysis, offering a non-destructive and comprehensive approach.
 ![img.png](img.png)
 操控机器人抓取样品并缓慢带动其通过高光谱检测区域，获得图像数据，同时在后续的数据处理中，利用opencv的圆检测，来选择ROI区域，以提高数据处理的效率。
 
+## 工作优缺点
+缺点： 机械臂的作用有限，只是提供了一个相对运动的平台。并没有发挥机器人应有的作用。
+
+
 ## 词汇积累
 
 - Apparatus and Integration: 设备和集成
