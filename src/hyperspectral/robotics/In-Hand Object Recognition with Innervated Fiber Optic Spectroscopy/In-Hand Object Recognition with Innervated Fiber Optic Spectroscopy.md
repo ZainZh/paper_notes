@@ -2,7 +2,7 @@
 
 > Nathaniel Hanson1, Hillel Hochsz , Northeast University, Boston, MA, USA
 
-文章链接：[Development of an automatic sorting robot for construction and demolition waste](paper.pdf)
+文章链接：[In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy for Soft Grippers](paper.pdf)
 
 ## 摘要
 
