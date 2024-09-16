@@ -1,17 +1,21 @@
-# Development of an automatic sorting robot
+# Flexible FTIR Spectral Imaging Enhancement for  Industrial Robot Infrared Vision Sensing
 
-> Xiao, Wen, et al. "Development of an automatic sorting robot for construction and demolition waste."
-> Clean Technologies and Environmental Policy 22 (2020): 1829-1841.
+> Liu, Tingting, et al. "Flexible FTIR spectral imaging enhancement for industrial robot infrared vision sensing." IEEE
+> Transactions on Industrial Informatics 16.1 (2019): 544-554.
 
-文章链接：[Development of an automatic sorting robot for construction and demolition waste](paper.pdf)
+> Carnegie Mellon University,City University of Hong Kong, Kowloon, Hong Kong,
+[文章链接](paper.pdf)
 
 ## 摘要
-
+这篇文章提出了一种新的方法，用于提高工业机器人的红外视觉传感器的性能。这种方法使用了FTIR光谱成像技术，可以捕获物质的组分信息，
+这些信息可以用于辅助设置抓取控制参数。开发了一种基于全变差（TV）约束的分辨率增强算法，用于抑制噪声并分离重叠的光谱带。
 ## 工作原理
-
+![img.png](img.png)
 ## 工作优缺点
 
 ## 词汇积累
 
-1. However, the FTIR spectrometer sensing can capture the material component information, which can be used for
-   assisting the setting of grasping control parameters.
+However, the FTIR spectrometer sensing can capture the material component information, which can be used for assisting
+the setting of grasping control parameters
+
+The FTIR imaging spectrum recognition provides rich material information for industrial robot vision sensing.
