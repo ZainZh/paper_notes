@@ -11,5 +11,7 @@
         - [In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy](./hyperspectral/robotics/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy.md)
         - [Classification of Household Materials via Spectroscopy](./hyperspectral/robotics/Classification%20of%20Household%20Materials%20via%20Spectroscopy/Classification%20of%20Household%20Materials%20via%20Spectroscopy.md)
         - [Multimodal Material Classification for Robots](./hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/Multimodal%20Material%20Classification%20for%20Robots.md)
+        - [HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC
+HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA](./hyperspectral/robotics/hyperbot/hyperbot.md)
 - [Robot Grasping](./robot_grasping/robot_grasping.md)
   - [Sim-Suction:Learning a Suction Grasp Policy](./robot_grasping/sim-suction/sim-suction.md)
