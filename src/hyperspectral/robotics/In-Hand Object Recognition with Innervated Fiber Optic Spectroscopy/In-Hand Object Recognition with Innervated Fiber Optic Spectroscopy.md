@@ -18,7 +18,7 @@
 
 ## 词汇积累
 
-1. The integration of spectroscopic data presents a promising new sensing modality for soft robots to understand the
+1. The integration of spectroscopic data presents a promising **new sensing modality** for soft robots to understand the
    material composition of grasped items, facilitating numerous applications for foodprocessing and manufacturing.
 2. Our goal in this research is to demonstrate visible to near infrared (VNIR) spectroscopy in tandem with manipulation
    by a soft gripper, as a step towards improved in-hand object recognition.

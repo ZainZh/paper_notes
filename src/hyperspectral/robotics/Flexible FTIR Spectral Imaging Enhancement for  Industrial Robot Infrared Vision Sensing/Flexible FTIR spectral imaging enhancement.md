@@ -16,6 +16,6 @@
 ## 词汇积累
 
 However, the FTIR spectrometer sensing can capture the material component information, which can be used for assisting
-the setting of grasping control parameters
+the setting of **grasping control parameters**
 
 The FTIR imaging spectrum recognition provides rich material information for industrial robot vision sensing.

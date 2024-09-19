@@ -1,18 +1,14 @@
 这个章节主要整理高光谱（Hyperspectral）和光谱学(spectroscopy)与机器人结合的相关工作
 
-1. **Spectroscopy（光谱学）**：
-    - 是研究物质和电磁辐射之间相互作用的科学方法。
-    - 工作原理：通过测量光与物质的相互作用（例如吸收、发射、散射），产生一个光谱，即光的强度随波长变化的图像。
-    - 输出数据：光谱学通常生成单一的光谱图，用于分析某一特定点或样本的化学成分、结构或物理状态。每次只能对一个点或样本进行分析。
-    - 应用：广泛用于化学分析、物质鉴别、天文学等。
+## 句式词汇积累：
 
-2. **Hyperspectral Imaging（高光谱成像）**：
-    - 是一种结合了成像技术和光谱技术的高级技术，能够在空间维度上同时获取多个光谱数据。
-    - 工作原理：捕捉物体的光谱信息，同时生成该物体的二维空间图像。每个像素都有一条完整的光谱，覆盖大量连续的光谱波段，通常跨越从可见光到近红外的范围。
-    - 输出数据：高光谱成像生成的是一个三维数据立方体（空间维度x、y和光谱维度λ），既有空间信息又有光谱信息。它可以对整个场景中的每个像素进行光谱分析。
-    - 应用：主要用于遥感、农业、环境监测、医学成像、材料科学等领域，尤其在分析复杂场景和材料时具有优势。
-
-区别总结：
-
-- 光谱学侧重于对单点或单一样本的光谱分析，通常不涉及空间信息；
-- 高光谱成像结合了空间和光谱信息，能够同时对多个点或区域进行分析，适用于复杂的场景和更大范围的物体检测。
+1. Overall, VNIR spectroscopy **presents a promising method** to give household robots a general-purpose ability to
+   infer
+   the liquids inside of containers, without needing to open or manipulate the containers.
+2. We conclude that a combination of visual, spectral, and IMU data provides **meaningful improvement** over state of
+   the art in terrain classification approaches
+3. Our work **represents a significant step towards** high-resolution spectralspatial sensor fusion for automated
+   quality
+   assessment.
+4. The proposed method **offers a promising solution** to enhance the efficiency and reliability of robotic grasping in
+   recycling applications.

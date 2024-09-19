@@ -17,12 +17,15 @@
 
 ## 词汇积累
 
-1. From this work, we find that spectroscopy poses a promising approach for material classification during robotic
+1. From this work, we find that spectroscopy **poses a promising approach for material classification** during robotic
    manipulation.
-2. In this work, we presented how robots can leverage spectral data to infer the materials of objects.
-3. Through this work, we have demonstrated that spectroscopy presents a reliable and effective way for robots to infer
+2. In this work, we presented how robots can **leverage spectral data** to infer the materials of objects.
+3. Through this work, **we have demonstrated that spectroscopy presents a reliable and effective way** for robots to infer
    the material properties of everyday household objects.
 4. The materials that form an object have important implications as robots interact with people and manipulate objects
    in real-world environments.
 5. This rotation helped add variation to the dataset and prevented the spectrometers from continually taking
    measurements of the same location on an object.
+
+## 后续工作
+[multimodal-material-classification-for-robots](../Multimodal%20Material%20Classification%20for%20Robots/Multimodal%20Material%20Classification%20for%20Robots.md)
