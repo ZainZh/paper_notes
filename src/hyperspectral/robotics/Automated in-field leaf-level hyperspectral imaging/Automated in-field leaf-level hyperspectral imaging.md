@@ -1,6 +1,6 @@
 # Automated in-field leaf-level hyperspectral imaging of corn plants using a Cartesian robotic platform
 
-[文章链接](paper.pdf)
+2021 Computers and Electronics in Agricultrue[文章链接](paper.pdf)
 
 > Automated in-field leaf-level hyperspectral imaging of corn plants using a Cartesian robotic platform. Elsevier,
 > Computers and Electronics in Agriculture

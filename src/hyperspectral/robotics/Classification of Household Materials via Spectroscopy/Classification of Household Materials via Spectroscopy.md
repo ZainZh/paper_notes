@@ -1,6 +1,6 @@
 # Classification of Household Materials via Spectroscopy
 
-文章链接：[Classification of Household Materials via Spectroscopy](paper.pdf)
+2019 RAL: 文章链接：[Classification of Household Materials via Spectroscopy](paper.pdf)
 
 ## 摘要
 
