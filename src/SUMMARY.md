@@ -14,4 +14,7 @@
         - [HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC
 HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA](./hyperspectral/robotics/hyperbot/hyperbot.md)
 - [Robot Grasping](./robot_grasping/robot_grasping.md)
-  - [Sim-Suction:Learning a Suction Grasp Policy](./robot_grasping/sim-suction/sim-suction.md)
+  - [Pose Estimation](./robot_grasping/pose_estimation/pose_estimation.md)
+    - [Sim-Suction:Learning a Suction Grasp Policy](./robot_grasping/sim-suction/sim-suction.md)
+    - [RFFCE:Residual Feature Fusion and Confidence Evaluation Network for  6DoF Pose Estimation](./robot_grasping/rffce/rffce.md)
+    - [KGNet:Knowledge-Guided Networks for Category-Level 6D Object Pose](./robot_grasping/kgnet/kgnet.md)
