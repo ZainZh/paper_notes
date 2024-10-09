@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="paper_notes.html"><strong aria-hidden="true">1.</strong> Paper Notes</a></li><li class="chapter-item expanded "><a href="hyperspectral/hyperspectral.html"><strong aria-hidden="true">2.</strong> Hyperspectral & Spectroscopy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hyperspectral/hyperspectral_robotics.html"><strong aria-hidden="true">2.1.</strong> Robotics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hyperspectral/robotics/Autonomous_hyperspectral_characterisation_station/Autonomous Hyperspectral Characterisation Station.html"><strong aria-hidden="true">2.1.1.</strong> Autonomous Hyperspectral Characterisation Station</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/Automated in-field leaf-level hyperspectral imaging/Automated in-field leaf-level hyperspectral imaging.html"><strong aria-hidden="true">2.1.2.</strong> Automated in-field leaf-level hyperspectral imaging</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/Development of an automatic sorting robot/Development of an automatic sorting robot.html"><strong aria-hidden="true">2.1.3.</strong> Development of an automatic sorting robot</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/Flexible FTIR Spectral Imaging Enhancement for  Industrial Robot Infrared Vision Sensing/Flexible FTIR spectral imaging enhancement.html"><strong aria-hidden="true">2.1.4.</strong> Flexible FTIR Spectral Imaging Enhancement</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy/In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy.html"><strong aria-hidden="true">2.1.5.</strong> In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/Classification of Household Materials via Spectroscopy/Classification of Household Materials via Spectroscopy.html"><strong aria-hidden="true">2.1.6.</strong> Classification of Household Materials via Spectroscopy</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/Multimodal Material Classification for Robots/Multimodal Material Classification for Robots.html"><strong aria-hidden="true">2.1.7.</strong> Multimodal Material Classification for Robots</a></li><li class="chapter-item expanded "><a href="hyperspectral/robotics/hyperbot/hyperbot.html"><strong aria-hidden="true">2.1.8.</strong> HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="robot_grasping/robot_grasping.html"><strong aria-hidden="true">3.</strong> Robot Grasping</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="robot_grasping/pose_estimation/pose_estimation.html"><strong aria-hidden="true">3.1.</strong> Pose Estimation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="robot_grasping/sim-suction/sim-suction.html"><strong aria-hidden="true">3.1.1.</strong> Sim-Suction:Learning a Suction Grasp Policy</a></li><li class="chapter-item expanded "><a href="robot_grasping/rffce/rffce.html"><strong aria-hidden="true">3.1.2.</strong> RFFCE:Residual Feature Fusion and Confidence Evaluation Network for  6DoF Pose Estimation</a></li><li class="chapter-item expanded "><a href="robot_grasping/kgnet/kgnet.html"><strong aria-hidden="true">3.1.3.</strong> KGNet:Knowledge-Guided Networks for Category-Level 6D Object Pose</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="paper-notes"><a class="header" href="#paper-notes">Paper Notes</a></h1>
+<p>阅读过的文献笔记将会按类别整理到该文中, 包括对论文的理解、收获和疑问等。
+我的研究方向主要落在：机器人抓取，多传感器设计与融合。</p>
+<p>在阅读及总结的过程中我参考了 <a href="./assets/how-to-read-a-paper.pdf">How to read a paper</a> 这篇文献，将阅读分为三个PASS：</p>
+<h2 id="first-pass"><a class="header" href="#first-pass">First Pass:</a></h2>
+<ol>
+<li>仔细阅读文章标题，摘要，介绍。</li>
+<li>只读一下各个章节的标题，小标题，忽略其他。</li>
+<li>读一下存在的数学公式以确定其理论基础。</li>
+<li>读一下结论。</li>
+<li>快速浏览下参考文献，以确认是否有读过的。</li>
+</ol>
+<p>在这一遍阅读中，需要确认5Cs: Category, Context, Correctness, Contributions, Clarity。以确认是否还有继续读下去的必要。</p>
+<h2 id="second-pass"><a class="header" href="#second-pass">Second Pass:</a></h2>
+<ol>
+<li>第二遍阅读需要对除了证明细节等其他内容进行精读，仔细查看图表等细节，以确认这是一篇好工作还是粗制滥造的工作。</li>
+<li>标记没阅读的相关参考文献。</li>
+</ol>
+<p>如果只是感兴趣的领域而非专业领域可以到此为止。</p>
+<h2 id="third-pass"><a class="header" href="#third-pass">Third Pass:</a></h2>
+<ol>
+<li>第三次阅读应该尝试去虚拟复现这篇文章，一步步跟着他思考，来查看文章中是否有一些漏洞等。并通过你的假设来与实际的论文来进行比较确认其优缺点。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hyperspectral"><a class="header" href="#hyperspectral">Hyperspectral</a></h1>
+<p>本类别整理下关于高光谱相关的论文，包括算法，以及和其他领域的结合</p>
+<h2 id="spectroscopy-和-hyperspectral-imaging-是两种在研究物质光谱特性上相关但有显著区别的技术"><a class="header" href="#spectroscopy-和-hyperspectral-imaging-是两种在研究物质光谱特性上相关但有显著区别的技术">Spectroscopy 和 hyperspectral imaging 是两种在研究物质光谱特性上相关但有显著区别的技术。</a></h2>
+<ol>
+<li>
+<p><strong>Spectroscopy（光谱学）</strong>：</p>
+<ul>
+<li>是研究物质和电磁辐射之间相互作用的科学方法。</li>
+<li>工作原理：通过测量光与物质的相互作用（例如吸收、发射、散射），产生一个光谱，即光的强度随波长变化的图像。</li>
+<li>输出数据：光谱学通常生成单一的光谱图，用于分析某一特定点或样本的化学成分、结构或物理状态。每次只能对一个点或样本进行分析。</li>
+<li>应用：广泛用于化学分析、物质鉴别、天文学等。</li>
+</ul>
+</li>
+<li>
+<p><strong>Hyperspectral Imaging（高光谱成像）</strong>：</p>
+<ul>
+<li>是一种结合了成像技术和光谱技术的高级技术，能够在空间维度上同时获取多个光谱数据。</li>
+<li>工作原理：捕捉物体的光谱信息，同时生成该物体的二维空间图像。每个像素都有一条完整的光谱，覆盖大量连续的光谱波段，通常跨越从可见光到近红外的范围。</li>
+<li>输出数据：高光谱成像生成的是一个三维数据立方体（空间维度x、y和光谱维度λ），既有空间信息又有光谱信息。它可以对整个场景中的每个像素进行光谱分析。</li>
+<li>应用：主要用于遥感、农业、环境监测、医学成像、材料科学等领域，尤其在分析复杂场景和材料时具有优势。</li>
+</ul>
+</li>
+</ol>
+<p>区别总结：</p>
+<ul>
+<li>光谱学侧重于对单点或单一样本的光谱分析，通常不涉及空间信息；</li>
+<li>高光谱成像结合了空间和光谱信息，能够同时对多个点或区域进行分析，适用于复杂的场景和更大范围的物体检测。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><p>这个章节主要整理高光谱（Hyperspectral）和光谱学(spectroscopy)与机器人结合的相关工作</p>
+<h2 id="句式词汇积累"><a class="header" href="#句式词汇积累">句式词汇积累：</a></h2>
+<ol>
+<li>Overall, VNIR spectroscopy <strong>presents a promising method</strong> to give household robots a general-purpose ability to
+infer
+the liquids inside of containers, without needing to open or manipulate the containers.</li>
+<li>We conclude that a combination of visual, spectral, and IMU data provides <strong>meaningful improvement</strong> over state of
+the art in terrain classification approaches</li>
+<li>Our work <strong>represents a significant step towards</strong> high-resolution spectralspatial sensor fusion for automated
+quality
+assessment.</li>
+<li>The proposed method <strong>offers a promising solution</strong> to enhance the efficiency and reliability of robotic grasping in
+recycling applications.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="autonomous-hyperspectral-characterisation-station--robot-aided-measuring-of-polymer-degradation"><a class="header" href="#autonomous-hyperspectral-characterisation-station--robot-aided-measuring-of-polymer-degradation">Autonomous Hyperspectral Characterisation Station:  Robot Aided Measuring of Polymer Degradation</a></h1>
+<blockquote>
+<p>Azizi, Shayan, et al. <a href="hyperspectral/robotics/Autonomous_hyperspectral_characterisation_station/../../../assets/Autonomous_Hyperspectral_Characterisation_Station_Robot_Aided_Measuring_of_Polymer_Degradation.pdf">"Autonomous Hyperspectral Characterisation Station: Robot Aided Measuring of Polymer
+Degradation."</a> IEEE Transactions on Automation Science and Engineering (2024).</p>
+</blockquote>
+<p><img src="hyperspectral/robotics/Autonomous_hyperspectral_characterisation_station/Autonmous.png" alt="alt text" /></p>
+<p><img src="hyperspectral/robotics/Autonomous_hyperspectral_characterisation_station/img_1.png" alt="img_1.png" /></p>
+<h2 id="摘要"><a class="header" href="#摘要">摘要</a></h2>
+<p>该文章创建了一种自动化高光谱特性测量站 (automated hyperspectral characterisation station)，用于测量聚合物的降解率（polymer
+degradation rates）。
+该系统由一个机器人和一个高光谱成像系统组成。机器人负责将样品放置在高光谱成像系统下，然后将样品移动到下一个位置。
+高光谱成像系统负责采集样品的高光谱图像。该系统的目的是提高高光谱成像系统的效率，减少人工操作的时间。</p>
+<p>This station integrates robot-aided hyperspectral imaging (HSI), complex material characterisation modelling, and
+automated data analysis, offering a non-destructive and comprehensive approach.</p>
+<p>我们只关注其中的机器人及数据采集部分。</p>
+<h2 id="工作原理"><a class="header" href="#工作原理">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/Autonomous_hyperspectral_characterisation_station/img.png" alt="img.png" />
+操控机器人抓取样品并缓慢带动其通过高光谱检测区域，获得图像数据，同时在后续的数据处理中，利用opencv的圆检测，来选择ROI区域，以提高数据处理的效率。</p>
+<h2 id="工作优缺点"><a class="header" href="#工作优缺点">工作优缺点</a></h2>
+<p>缺点： 机械臂的作用有限，只是提供了一个相对运动的平台。并没有发挥机器人应有的作用。</p>
+<h2 id="词汇积累"><a class="header" href="#词汇积累">词汇积累</a></h2>
+<ul>
+<li>Apparatus and Integration: 设备和集成</li>
+<li>Traceability, accuracy and efficiency: 可追溯性， 准确性和效率</li>
+<li>objective, data-driven and quantifiable: 客观，数据驱动和可量化</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="automated-in-field-leaf-level-hyperspectral-imaging-of-corn-plants-using-a-cartesian-robotic-platform"><a class="header" href="#automated-in-field-leaf-level-hyperspectral-imaging-of-corn-plants-using-a-cartesian-robotic-platform">Automated in-field leaf-level hyperspectral imaging of corn plants using a Cartesian robotic platform</a></h1>
+<p>2021 Computers and Electronics in Agricultrue<a href="hyperspectral/robotics/Automated%20in-field%20leaf-level%20hyperspectral%20imaging/paper.pdf">文章链接</a></p>
+<blockquote>
+<p>Automated in-field leaf-level hyperspectral imaging of corn plants using a Cartesian robotic platform. Elsevier,
+Computers and Electronics in Agriculture</p>
+</blockquote>
+<blockquote>
+<p>Purdue University, West Lafayette, IN, USA and Zhejiang University, Hangzhou, China</p>
+</blockquote>
+<h2 id="摘要-1"><a class="header" href="#摘要-1">摘要</a></h2>
+<p>为了采集叶片的高光谱数据，2018年，普度大学的工程师开发了一款手持式的仪器LeafSpec来解决之前的叶片高光谱传感器只能检测一点，检测信息无法很好的代表整个叶片
+或冠层。 这篇文章构建了一个机器人系统来代替人类去使用LeafSpec，以此来解决人类操作的不稳定性和不准确性。</p>
+<h2 id="工作原理-1"><a class="header" href="#工作原理-1">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/Automated%20in-field%20leaf-level%20hyperspectral%20imaging/img.png" alt="img.png" />
+<img src="hyperspectral/robotics/Automated%20in-field%20leaf-level%20hyperspectral%20imaging/img_1.png" alt="img_1.png" />
+工作原理是通过机器人的运动来实现叶片的高光谱数据采集。机器人的运动是通过一个笛卡尔坐标系来控制的，
+这样可以保证机器人的运动是平滑的，而不是突然的。</p>
+<h2 id="工作优缺点-1"><a class="header" href="#工作优缺点-1">工作优缺点</a></h2>
+<p>总体来说，工作有些粗糙，相关性不大。</p>
+<h2 id="词汇积累-1"><a class="header" href="#词汇积累-1">词汇积累</a></h2>
+<p>Handheld leaf <strong>spectrometers</strong> provide a higher quality of spectral data, but they only <strong>measure a small spot</strong> on the leaf,
+<strong>which cannot represent</strong> the whole leaf or canopy <strong>very well due to the great variation between different locations</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="development-of-an-automatic-sorting-robot"><a class="header" href="#development-of-an-automatic-sorting-robot">Development of an automatic sorting robot</a></h1>
+<blockquote>
+<p>Xiao, Wen, et al. "Development of an automatic sorting robot for construction and demolition waste."
+Clean Technologies and Environmental Policy 22 (2020): 1829-1841.</p>
+</blockquote>
+<p>文章链接：<a href="hyperspectral/robotics/Development%20of%20an%20automatic%20sorting%20robot/paper.pdf">Development of an automatic sorting robot for construction and demolition waste</a></p>
+<h2 id="摘要-2"><a class="header" href="#摘要-2">摘要</a></h2>
+<p>该系统集成了近红外（NIR）高光谱成像和高度图检测，用于根据材料的光谱特征进行分类。
+通过高度图来进行roi划分，因为rgb图像在覆盖灰尘的情况下会受到影响，而高度图不会。</p>
+<h2 id="工作原理-2"><a class="header" href="#工作原理-2">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/Development%20of%20an%20automatic%20sorting%20robot/img.png" alt="img.png" />
+<img src="hyperspectral/robotics/Development%20of%20an%20automatic%20sorting%20robot/img_1.png" alt="img_1.png" /></p>
+<p>引入Trend feature来对材料进行分类。这个特征就是光谱曲线一阶导数</p>
+<h2 id="工作优缺点-2"><a class="header" href="#工作优缺点-2">工作优缺点</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="flexible-ftir-spectral-imaging-enhancement-for--industrial-robot-infrared-vision-sensing"><a class="header" href="#flexible-ftir-spectral-imaging-enhancement-for--industrial-robot-infrared-vision-sensing">Flexible FTIR Spectral Imaging Enhancement for  Industrial Robot Infrared Vision Sensing</a></h1>
+<blockquote>
+<p>Liu, Tingting, et al. "Flexible FTIR spectral imaging enhancement for industrial robot infrared vision sensing." IEEE
+Transactions on Industrial Informatics 16.1 (2019): 544-554.</p>
+</blockquote>
+<blockquote>
+<p>Carnegie Mellon University,City University of Hong Kong, Kowloon, Hong Kong,
+IEEE Transactions on Industrial Informatics 16.1 (2019) <a href="hyperspectral/robotics/Flexible%20FTIR%20Spectral%20Imaging%20Enhancement%20for%20%20Industrial%20Robot%20Infrared%20Vision%20Sensing/paper.pdf">文章链接</a></p>
+</blockquote>
+<h2 id="摘要-3"><a class="header" href="#摘要-3">摘要</a></h2>
+<p>这篇文章提出了一种新的方法，用于提高工业机器人的红外视觉传感器的性能。这种方法使用了FTIR光谱成像技术，可以捕获物质的组分信息，
+这些信息可以用于辅助设置抓取控制参数。开发了一种基于全变差（TV）约束的分辨率增强算法，用于抑制噪声并分离重叠的光谱带。</p>
+<h2 id="工作原理-3"><a class="header" href="#工作原理-3">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/Flexible%20FTIR%20Spectral%20Imaging%20Enhancement%20for%20%20Industrial%20Robot%20Infrared%20Vision%20Sensing/img.png" alt="img.png" /></p>
+<h2 id="工作优缺点-3"><a class="header" href="#工作优缺点-3">工作优缺点</a></h2>
+<h2 id="词汇积累-2"><a class="header" href="#词汇积累-2">词汇积累</a></h2>
+<p>However, the FTIR spectrometer sensing can capture the material component information, which can be used for assisting
+the setting of <strong>grasping control parameters</strong></p>
+<p>The FTIR imaging spectrum recognition provides rich material information for industrial robot vision sensing.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="in-hand-object-recognition-with-innervated-fiber-optic-spectroscopy-for-soft-grippers"><a class="header" href="#in-hand-object-recognition-with-innervated-fiber-optic-spectroscopy-for-soft-grippers">In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy for Soft Grippers</a></h1>
+<blockquote>
+<p>Nathaniel Hanson1, Hillel Hochsz , Northeast University, Boston, MA, USA</p>
+</blockquote>
+<p>文章链接：<a href="hyperspectral/robotics/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy/paper.pdf">In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy for Soft Grippers</a></p>
+<h2 id="摘要-4"><a class="header" href="#摘要-4">摘要</a></h2>
+<p>文章提出了一种基于光纤光谱学的软抓取器中的手持物体识别方法。该方法通过将光纤传感器集成到软抓取器的内部，以实现对物体的化学成分的识别。
+该方法可以用于食品加工和制造等领域的应用。</p>
+<h2 id="工作原理-4"><a class="header" href="#工作原理-4">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy/img.png" alt="img.png" />
+<img src="hyperspectral/robotics/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy/img_1.png" alt="img_1.png" /></p>
+<h2 id="工作优缺点-4"><a class="header" href="#工作优缺点-4">工作优缺点</a></h2>
+<h2 id="词汇积累-3"><a class="header" href="#词汇积累-3">词汇积累</a></h2>
+<ol>
+<li>The integration of spectroscopic data presents a promising <strong>new sensing modality</strong> for soft robots to understand the
+material composition of grasped items, facilitating numerous applications for foodprocessing and manufacturing.</li>
+<li>Our goal in this research is to demonstrate visible to near infrared (VNIR) spectroscopy in tandem with manipulation
+by a soft gripper, as a step towards improved in-hand object recognition.</li>
+<li>This knowledge is useful in not only discriminating between classes, but also in understanding intra-class variation.</li>
+<li>Field spectroscopy is a developing discipline, particularly within the area of robotics.</li>
+<li>Our work contributes a unique capability to recognize objects beyond shape, weight, and texture.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="classification-of-household-materials-via-spectroscopy"><a class="header" href="#classification-of-household-materials-via-spectroscopy">Classification of Household Materials via Spectroscopy</a></h1>
+<p>2019 RAL: 文章链接：<a href="hyperspectral/robotics/Classification%20of%20Household%20Materials%20via%20Spectroscopy/paper.pdf">Classification of Household Materials via Spectroscopy</a></p>
+<h2 id="摘要-5"><a class="header" href="#摘要-5">摘要</a></h2>
+<p>通过两种不同的商业光谱仪，我们对超过50种家庭物品进行了光谱分析，以确定它们的材料。我们的实验结果表明，光谱学是一种有前途的方法，可以帮助机器人在操作过程中对物体进行材料分类。</p>
+<p>并通过交叉验证实现了79.1%的准确率，这表明光谱学是一种可靠且有效的方法，可以帮助机器人推断日常家用物品的材料属性.</p>
+<h2 id="工作原理-5"><a class="header" href="#工作原理-5">工作原理</a></h2>
+<p><img src="hyperspectral/robotics/Classification%20of%20Household%20Materials%20via%20Spectroscopy/img.png" alt="img.png" /></p>
+<h2 id="工作优缺点-5"><a class="header" href="#工作优缺点-5">工作优缺点</a></h2>
+<p>物体的种类过于多且杂乱，没有考虑颜色影响，没有考虑材料的子类别。</p>
+<h2 id="词汇积累-4"><a class="header" href="#词汇积累-4">词汇积累</a></h2>
+<ol>
+<li>From this work, we find that spectroscopy <strong>poses a promising approach for material classification</strong> during robotic
+manipulation.</li>
+<li>In this work, we presented how robots can <strong>leverage spectral data</strong> to infer the materials of objects.</li>
+<li>Through this work, <strong>we have demonstrated that spectroscopy presents a reliable and effective way</strong> for robots to infer
+the material properties of everyday household objects.</li>
+<li>The materials that form an object have important implications as robots interact with people and manipulate objects
+in real-world environments.</li>
+<li>This rotation helped add variation to the dataset and prevented the spectrometers from continually taking
+measurements of the same location on an object.</li>
+</ol>
+<h2 id="后续工作"><a class="header" href="#后续工作">后续工作</a></h2>
+<p><a href="hyperspectral/robotics/Classification%20of%20Household%20Materials%20via%20Spectroscopy/../Multimodal%20Material%20Classification%20for%20Robots/Multimodal%20Material%20Classification%20for%20Robots.html">multimodal-material-classification-for-robots</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="multimodal-material-classification-for-robots"><a class="header" href="#multimodal-material-classification-for-robots">Multimodal Material Classification for Robots</a></h1>
+<p>文章链接：<a href="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/paper.pdf">Multimodal Material Classification for Robots</a></p>
+<h2 id="摘要-6"><a class="header" href="#摘要-6">摘要</a></h2>
+<p>这篇文章提出了一种多模态材料分类方法，该方法结合了光谱学和高分辨率纹理图片信息。并构建了一个144种家庭物品的高分辨率纹理图片以及高光谱信息的数据集。
+他们证明了机器人可以通过局部的高分辨率图片以及光谱学特征进行物体分类。</p>
+<h2 id="工作原理-6"><a class="header" href="#工作原理-6">工作原理</a></h2>
+<p>工作原理简单来说是将两个模态的数据分别pretrain后在进行进一步的融合，投入C网络进行分类
+<img src="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/img.png" alt="img.png" />
+<img src="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/img_1.png" alt="img_1.png" /></p>
+<p><img src="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/img_2.png" alt="img_2.png" /></p>
+<p><img src="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/img_3.png" alt="img_3.png" /></p>
+<h2 id="摘抄"><a class="header" href="#摘抄">摘抄</a></h2>
+<p>Finally, using this spectral and visual sensing approach, we demonstrate that a robot can reliably classify a scene of
+objects on a table without direct contact. In this work, we make the following contributions:</p>
+<h2 id="前序相关工作"><a class="header" href="#前序相关工作">前序相关工作</a></h2>
+<p><a href="hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/../Classification%20of%20Household%20Materials%20via%20Spectroscopy/Classification%20of%20Household%20Materials%20via%20Spectroscopy.html">classification-of-household-materials-via-spectroscopy</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hyperbot--a-benchmarking-testbed-for-acquisition-of-robot-centric-hyperspectral-scene-and-in-hand-object-data"><a class="header" href="#hyperbot--a-benchmarking-testbed-for-acquisition-of-robot-centric-hyperspectral-scene-and-in-hand-object-data">HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA</a></h1>
+<p>2022 Workshop on Hyperspectral Image and signal Processing: Evolution in Remote Sensing, WHISPERS</p>
+<h2 id="摘要-7"><a class="header" href="#摘要-7">摘要</a></h2>
+<p>这篇文章提出了一个新的基准测试平台，用于获取机器人中心的高光谱场景和手持物体数据。这个平台包括一个机器人系统，一个高光谱相机和一个手持式高光谱传感器。这个平台可以用于评估机器人的高光谱感知和操作能力。
+<img src="hyperspectral/robotics/hyperbot/img.png" alt="img.png" /></p>
+<p>机器人被平台轨道带动，线性高光谱相机被安装在执行器末端。</p>
+<div style="break-before: page; page-break-before: always;"></div><p>这个章节主要总结和机器人抓取有关的工作，交叉学科的工作不算在内。主要是网络，数据集等</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pose-estimation"><a class="header" href="#pose-estimation">Pose Estimation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sim-suction-learning-a-suction-grasp-policy-for--cluttered-environments-using-a--synthetic-benchmark"><a class="header" href="#sim-suction-learning-a-suction-grasp-policy-for--cluttered-environments-using-a--synthetic-benchmark">Sim-Suction: Learning a Suction Grasp Policy for  Cluttered Environments Using a  Synthetic Benchmark</a></h1>
+<p>IEEE Transactions on Robotics, 2024, <a href="robot_grasping/sim-suction/paper.pdf">文章链接</a></p>
+<h2 id="摘要-8"><a class="header" href="#摘要-8">摘要</a></h2>
+<p>这篇文章为了解决在杂乱环境下的吸盘抓取问题，提出了一种新的方法。这种方法使用了对象感知的点云数据，直接生成了物体实例的6-D吸盘抓取姿势。</p>
+<h2 id="方法"><a class="header" href="#方法">方法</a></h2>
+<p><img src="robot_grasping/sim-suction/img_2.png" alt="img_2.png" /></p>
+<p>点云通过PointNet产生的point-wise affordance与RGB图像产生的语义分割mask一起输入到ScoreNet网络中。ScoreNet网络生成了N*1吸力概率分布。</p>
+<p><img src="robot_grasping/sim-suction/img.png" alt="img.png" /></p>
+<h2 id="摘抄-1"><a class="header" href="#摘抄-1">摘抄</a></h2>
+<ol>
+<li>
+<p>THE development of autonomous mobile manipulation platforms is crucial for <strong>the future of space habitats</strong>, where
+robots
+can perform various tasks in cluttered environments with <strong>minimal human intervention</strong>.</p>
+</li>
+<li>
+<p>identifying the grasp region and executing the mechanical grasping process</p>
+</li>
+<li>
+<p>cluttered environments.</p>
+</li>
+<li>
+<p>However, <strong>to the best of authors’ knowledge</strong>, no study on suction cup grasp success prediction uses object-aware
+point-wise affordance, which directly takes the 3-D point cloud and text prompt as input and generates robust 6-D
+suction grasp poses for object instances.</p>
+</li>
+<li>
+<p>point-wise affordance</p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rffceresidual-feature-fusion-and-confidence-evaluation-network-for--6dof-pose-estimation"><a class="header" href="#rffceresidual-feature-fusion-and-confidence-evaluation-network-for--6dof-pose-estimation">RFFCE:Residual Feature Fusion and Confidence Evaluation Network for  6DoF Pose Estimation</a></h1>
+<blockquote>
+<blockquote>
+<p>Meng, Qiwei, Shanshan Ji, Shiqiang Zhu, Tianlei Jin, Te Li, Jason Gu和Wei Song. 《RFFCE: Residual Feature Fusion and
+Confidence Evaluation Network for 6DoF Pose Estimation》. 收入 2023 IEEE International Conference on Robotics and
+Automation (ICRA), 2876–83. London, United Kingdom: IEEE, 2023. https://doi.org/10.1109/ICRA48891.2023.10160448.</p>
+</blockquote>
+</blockquote>
+<p>文章链接: <a href="robot_grasping/rffce/paper.pdf">paper.pdf</a></p>
+<h2 id="摘要-9"><a class="header" href="#摘要-9">摘要</a></h2>
+<p>作者提出了一个两阶段的6DoF姿态估计网络，用于在RGB-D图像中检测物体的姿态。第一阶段是一个特征融合网络，用于提取RGB-D图像的特征。
+第二阶段是一个置信度评估网络，用于评估特征的置信度。作者提出了一个新的残差特征融合模块，用于融合RGB和深度图像的特征。作者还提出了一个置信度评估模块，
+用于评估特征的置信度。作者在YCB-Video数据集上进行了实验，结果表明，该方法在6DoF姿态估计方面取得了最先进的性能。
+<img src="robot_grasping/rffce/img.png" alt="img.png" />
+<img src="robot_grasping/rffce/img_1.png" alt="img_1.png" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="kgnetknowledge-guided-networks-for-category-level-6d-object-pose"><a class="header" href="#kgnetknowledge-guided-networks-for-category-level-6d-object-pose">KGNet:Knowledge-Guided Networks for Category-Level 6D Object Pose</a></h1>
+<blockquote>
+<blockquote>
+<p>Meng, Qiwei, Jason Gu, Shiqiang Zhu, Jianfeng Liao, Tianlei Jin, Fangtai Guo, Wen Wang和Wei Song. 《KGNet:
+Knowledge-Guided Networks for Category-Level 6D Object Pose and Size Estimation》. 收入 2023 IEEE International
+Conference on Robotics and Automation (ICRA), 6102–8. London, United Kingdom:
+IEEE,2023. https://doi.org/10.1109/ICRA48891.2023.10160349.</p>
+</blockquote>
+</blockquote>
+<p>文章链接: <a href="robot_grasping/kgnet/paper.pdf">paper.pdf</a></p>
+<h2 id="摘要-10"><a class="header" href="#摘要-10">摘要</a></h2>
+<p>尽管在结构化场景下物体 6D 位姿估计和机器人抓取方面取得了巨大飞跃，但大多数方法严重依赖于目标物体事先的精确 CAD
+模型，从而限制了它们的广泛应用。该网络包括三项主要创新：知识引导的分类模型生成、逐点变形概率矩阵和协同 RGBD
+特征融合，前两者利用分类对象知识来重建不可见的对象，而后者则有助于姿势敏感的特征提取。</p>
+<p><img src="robot_grasping/kgnet/img.png" alt="img.png" />
+<img src="robot_grasping/kgnet/img_1.png" alt="img_1.png" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
