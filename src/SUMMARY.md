@@ -11,10 +11,13 @@
         - [In-Hand Object Recognition with Innervated Fiber Optic Spectroscopy](./hyperspectral/robotics/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy/In-Hand%20Object%20Recognition%20with%20Innervated%20Fiber%20Optic%20Spectroscopy.md)
         - [Classification of Household Materials via Spectroscopy](./hyperspectral/robotics/Classification%20of%20Household%20Materials%20via%20Spectroscopy/Classification%20of%20Household%20Materials%20via%20Spectroscopy.md)
         - [Multimodal Material Classification for Robots](./hyperspectral/robotics/Multimodal%20Material%20Classification%20for%20Robots/Multimodal%20Material%20Classification%20for%20Robots.md)
-        - [HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC
-HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA](./hyperspectral/robotics/hyperbot/hyperbot.md)
+        - [HYPERBOT – A BENCHMARKING TESTBED FOR ACQUISITION OF ROBOT-CENTRIC HYPERSPECTRAL SCENE AND IN-HAND OBJECT DATA](./hyperspectral/robotics/hyperbot/hyperbot.md)
 - [Robot Grasping](./robot_grasping/robot_grasping.md)
   - [Pose Estimation](./robot_grasping/pose_estimation/pose_estimation.md)
     - [Sim-Suction:Learning a Suction Grasp Policy](./robot_grasping/sim-suction/sim-suction.md)
     - [RFFCE:Residual Feature Fusion and Confidence Evaluation Network for  6DoF Pose Estimation](./robot_grasping/rffce/rffce.md)
     - [KGNet:Knowledge-Guided Networks for Category-Level 6D Object Pose](./robot_grasping/kgnet/kgnet.md)
+- [System design with algorithm](./system_design/system_design.md)
+  - [Gripper](./system_design/gripper/gripper.md)
+    - [Design and Control of Roller Grasper V3 for In-Hand Manipulation](./system_design/gripper/roller_grasper_v3/roller_grasper_v3.md)
+
